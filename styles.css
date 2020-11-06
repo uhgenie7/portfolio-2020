@@ -1,3 +1,5 @@
+@import "reset.css";
+
 :root {
   /*color*/
   --color-white: #ffffff;
@@ -22,6 +24,7 @@
   --weight-regular: 400;
 
   /*Size*/
+  --size-border-radius: 4px;
 }
 
 /*universal tags*/
@@ -56,4 +59,44 @@ p {
   font-weight: var(--font-regular);
   color: var(--color-black);
   margin: 4px 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  cursor: default;
+}
+
+/*Navbar*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-blue);
+  color: var(--color-black);
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__logo,
+.navbar__menu__item {
+  padding: 20px 12px;
+  margin: 0px 4px;
+  cursor: pointer;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-bold);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-blue);
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
