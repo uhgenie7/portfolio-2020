@@ -384,3 +384,18 @@ body {
 .testimonial__speech-bubble a {
   color: var(--color-dark-boldblue);
 }
+
+/*contact*/
+#contact {
+  background-color: var(--color-dark-brown);
+}
+
+.contact__title {
+  color: var(--color-bold-blue);
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-large);
+  margin: 24px 0;
+}
