@@ -1,0 +1,30 @@
+:root {
+  /*color*/
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-brown: #b08761;
+  --color-light-brown: #ffdebf;
+  --color-brown: #fccfa4;
+  --color-dark-blue: #4f9db0;
+  --color-blue: #a4ebfc;
+  --color-black: #000000;
+
+  /*Font size*/
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /*Font weight*/
+  --weight-bold: 900;
+  --weight-semi-bold: 700;
+  --weight-regular: 400;
+
+  /*Size*/
+}
+
+/*universal tags*/
+* {
+  box-sizing: border-box;
+}
