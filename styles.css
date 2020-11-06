@@ -27,6 +27,9 @@
 
   /*Size*/
   --size-border-radius: 4px;
+
+  /*animation*/
+  --animaiton-duration: 300ms;
 }
 
 /*universal tags*/
@@ -139,4 +142,46 @@ body {
   border-radius: 4px;
   background-color: var(--color-light-brown);
   color: var(--color-bold-blue);
+}
+
+/*section common*/
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/*about*/
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px; /*line-height를 높이만큼 지정하면 중간이 됨*/
+  font-size: 70px;
+  margin: auto;
+  color: var(--color-dark-boldblue);
+  border: 1px solid var(--color-dark-boldblue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon i {
+  transition: all var(--animaiton-duration) ease;
+}
+
+.major__icon i:hover {
+  color: var(--color-bold-blue);
+  transform: rotateY(-180deg);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-boldblue);
+  font-size: var(--font-small);
 }
