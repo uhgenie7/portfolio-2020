@@ -86,7 +86,11 @@ body {
   align-items: center;
   background-color: var(--color-brown);
   color: var(--color-bold-blue);
+  opacity: 1;
+  border-bottom: 1px solid var(--color-dark-boldblue);
 }
+
+/*스크롤바를 내리면 투명하게 해주자*/
 
 .navbar__menu {
   display: flex;
@@ -123,9 +127,12 @@ body {
   top: 18px;
 }
 
+.body_img {
+  background: url("img/home-background.png") top/cover no-repeat;
+}
+
 /*home*/
 #home {
-  background: url("img/home-background.png") top/cover no-repeat;
   padding: 40px;
   text-align: center;
 }
@@ -152,6 +159,10 @@ body {
   border-radius: 4px;
   background-color: var(--color-light-brown);
   color: var(--color-bold-blue);
+}
+
+.home_contact:hover {
+  background-color: transparent;
 }
 
 /*section common*/
