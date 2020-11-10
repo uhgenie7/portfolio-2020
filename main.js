@@ -13,6 +13,22 @@ document.addEventListener('scroll', () => {
     }
 })
 
+
+//method
+function scrollIntoView(selector) {
+    const scrollTo = document.querySelector(selector);
+    scrollTo.scrollIntoView({ behavior: "smooth", block: "center" });
+}
+
+//navbar__logo
+
+const navbarLogo = document.querySelector('.navbar__logo');
+
+navbarLogo.addEventListener('click', () => {
+    console.log('hello');
+    scrollIntoView('#home');
+});
+
 //scroll to section
 
 const navbarMenu = document.querySelector('.navbar__menu');
@@ -23,7 +39,15 @@ navbarMenu.addEventListener('click', (event) => {
     if (link == null) {
         return;
     }
-    console.log(event.target.dataset.link);
-    const scrollTo = document.querySelector(link);
-    scrollTo.scrollIntoView({behavior:"smooth", block: "center"});
-})
+    scrollIntoView(link);
+});
+
+//contact scroll
+
+const navbarContact = document.querySelector('.home_contact');
+
+navbarContact.addEventListener('click', () => {
+    scrollIntoView('#contact');
+
+});
+
