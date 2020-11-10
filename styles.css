@@ -319,6 +319,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animaiton-duration) ease-out;
+}
+
+.work__projects.anim-out {
+  opacity: 0.6;
+  transform: scale(0.96) translateY(40px);
 }
 
 .project {
@@ -331,6 +338,10 @@ body {
   margin: 2px;
   background-color: var(--color-dark-blue);
   position: relative;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
