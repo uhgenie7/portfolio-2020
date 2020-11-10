@@ -57,3 +57,17 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
     home.style.opacity = (1 - window.scrollY / homeHeight);
 })
+
+//arrow up button
+const arrowUpShow = document.querySelector('.bottom_button');
+document.addEventListener('scroll', () => {
+    if (window.scrollY > homeHeight / 2) {
+        arrowUpShow.classList.add('visible');
+    } else {
+        arrowUpShow.classList.remove('visible');
+    }
+});
+
+arrowUpShow.addEventListener('click', () => {
+    scrollIntoView('#home');
+});
