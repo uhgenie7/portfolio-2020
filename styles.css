@@ -81,15 +81,25 @@ body {
 
 /*Navbar*/
 #navbar {
+  position: fixed;
+  width: 100%;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-brown);
+  background-color: transparent;
   color: var(--color-bold-blue);
   opacity: 1;
   border-bottom: 1px solid var(--color-dark-boldblue);
+  transition: all var(--animaiton-duration) ease-in-out;
 }
 
+#navbar.navbar--dark {
+  width: 100%;
+  padding: 0px;
+  background-color: var(--color-light-brown);
+  opacity: 0.8;
+}
 /*스크롤바를 내리면 투명하게 해주자*/
 
 .navbar__menu {
@@ -135,6 +145,7 @@ body {
 #home {
   padding: 40px;
   text-align: center;
+  padding-top: 120px;
 }
 
 .home__avartar {
